@@ -2,6 +2,10 @@ plugins {
     id "net.ltgt.errorprone" version "0.0.8"
 }
 
+// Override Guava to workaround issue google/error-prone#482;
+// keep in sync with the Guava version used in the project (or at least required by Dagger)
+configurations.errorprone.resolutionStrategy.force 'com.google.guava:guava:20.0'
+
 apply plugin: 'com.android.application'
 apply plugin: 'com.frogermcs.androiddevmetrics'
 
