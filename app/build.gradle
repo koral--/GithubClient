@@ -69,7 +69,4 @@ dependencies {
     androidTestCompile "com.google.dexmaker:dexmaker:1.2"
     androidTestCompile "com.google.dexmaker:dexmaker-mockito:1.2"
 }
-configurations.all {resolutionStrategy.force 'com.google.guava:guava:20.0'}
-configurations.errorprone {
-    resolutionStrategy.force 'com.google.errorprone:error_prone_core:2.0.15'
-}
+configurations.all {resolutionStrategy.force 'com.google.guava:guava:21.0'}
